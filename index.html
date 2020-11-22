@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Joanne Ramadani - Data Analytics & Web Development</title>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="stylesheet.css" />
+    <link href="./resources/css/all.css" rel="stylesheet" />
+
+    <!--BOOTSTRAP LINKS BELOW-->
+
+    <!-- CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+<!-- jQuery and JS bundle w/ Popper.js -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
+    <!--RESPONSIVE META TAG-->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!--EXTERNAL FONTS-->
+    <link
+      href="https://fonts.googleapis.com/css?family=Cormorant|Jura|Oranienbaum|Unna"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+      integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+      crossorigin="anonymous"
+    />
+    <script>
+      //tooltip function
+      $(function () {
+        $('[data-toggle="tooltip"]').tooltip();
+      });
+    </script>
+
+    <!--LOCAL STYLE-->
+    <style>
+      a {
+        color: black;
+      }
+      .icon:hover {
+        color: white;
+        text-decoration: none;
+      }
+      .headerFont {
+        font-family: "UNNA", serif;
+      }
+      .localButton {
+        transform: translate(-50%, 50%);
+      }
+      .iconSet {
+        display: block;
+        width: 35%;
+      }
+      .iconSet:hover{
+        color:white;
+      }
+
+      .contactIcon {
+  padding-bottom: 20px;
+  padding-right:20px;
+}
+.contactIcon:hover{
+  color:black;
+}
+
+      .desktopBio {
+        margin-bottom: 10px;
+      }
+
+      .textLink:hover {
+        color: seagreen;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        background-image: url("./resources/images/FRA-1470871.jpg");
+        background-size: cover;
+        background-position: top center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        margin: 0px;
+        padding: 0px;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        -webkit-font-smoothing: antialiased;
+      }
+
+      #home {
+        height: 100vh;
+      }
+      #about {
+        height: 100vh;
+        background-image: url("./resources/images/presentation.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        margin: 0px;
+        padding: 0px;
+        overflow-x: hidden;
+        overflow-y: hidden;
+        -webkit-font-smoothing: antialiased;
+      }
+
+      #stacks {
+        height: 100vh;
+        background-color: #fcc256;
+      }
+      #work {
+        height: 150vh;
+        background-color: #fffae3;
+      }
+
+      #contact {
+        background-color:  #fffae3;
+        height:20vh;
+      }
+
+      /*LOCAL MEDIA QUERIES FOR MOBILE USABILITY*/
+      @media only screen and (min-width: 992px) {
+        .mobileContent {
+          display: none;
+        }
+
+        .mobileBio {
+          display: none;
+        }
+      }
+
+      @media only screen and (max-width: 992px) {
+        .iconSet {
+          display: none;
+        }
+
+        .homeHub {
+          display: none;
+        }
+
+        .desktopBio {
+          display: none;
+        }
+
+        .workMobile {
+          height: 1500px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="mobileContent">
+      <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+        <img src="./resources/images/left-curl.png" width="50px" />
+        <button
+          style="margin: auto"
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <img
+          src="./resources/images/right-curl.png"
+          class="right-curlMobile"
+          width="50px"
+        />
+
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <div class="text-center">
+            <ul class="navbar-nav">
+              <li class="nav-item active">
+                <a class="nav-link" href="#home"
+                  >Home <span class="sr-only">(current)</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#stacks">Stacks</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#work">Past Projects</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <img
+          src="./resources/images/right-curl.png"
+          class="right-curlDesktop"
+          width="50px"
+        />
+      </nav>
+    </div>
+    <!-- END OF MOBILE CONTENT  -->
+
+    <div class="desktopContent">
+      <!--RETURN HOME- in upper left hand corner-->
+      <div class="homeHub sticky-top">
+        <a href="#home"><i class="fas fa-home" style="padding: 10px"></i></a>
+      </div>
+      <!--MAIN PAGE-->
+      <div id="home" class="sectionOne">
+        <div class="sectionOneBg mx-auto"></div>
+        <div class="container">
+          <br /><br /><br /><br /><br /><br /><br /><br /><br />
+          <div style="background-color: white; opacity: 0.75; padding: 45px">
+            <h1 class="text-center headerFont">JOANNE RAMADANI</h1>
+            <h3 class="text-center headerFont">
+              DATA ANALYTICS ✩ DESIGN ✩ WEB DEVELOPMENT
+            </h3>
+          </div>
+        </div>
+        <div class="iconSet container-fluid mx-auto">
+          <div class="row">
+            <div class="col" style="margin-top: 10px">
+              <div class="siBu">
+                <a href="#about">
+                  <i
+                    style="margin-left: 22px; margin-top: 16px"
+                    class="fas fa-info"
+                  ></i>
+                </a>
+              </div>
+            </div>
+            <div class="col" style="margin-top: 10px">
+              <div class="siBu">
+                <a href="#stacks">
+                  <i
+                    style="margin-left: 15px; margin-top: 16px"
+                    class="fas fa-code"
+                  ></i>
+                </a>
+              </div>
+            </div>
+            <div class="col" style="margin-top: 10px">
+              <div class="siBu">
+                <a href="#work">
+                  <i
+                    style="margin-left: 17px; margin-top: 16px"
+                    class="fas fa-briefcase"
+                  ></i>
+                </a>
+              </div>
+            </div>
+            <div class="col" style="margin-top: 10px">
+              <div class="siBu">
+                <a href="#contact">
+                  <i
+                    style="margin-left: 17px; margin-top: 16px"
+                    class="fas fa-envelope"
+                  ></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--ABOUT SECTION-->
+      <div id="about">
+        <div class="container">
+          <div class="desktopBio row justify-content-end p-5">
+            <div class="col-3"></div>
+            <div class="col-3"></div>
+            <div class="col-3">
+              <div
+                style="
+                  width: 200%;
+                  height: 83%;
+                  background-color: black;
+                  opacity: 0.85;
+                  color: white;
+                  padding-bottom: 30px;
+                "
+              >
+                <p
+                  class="text-center p-3"
+                  style="margin: 15px; font-size: 18px"
+                >
+                  Joanne Ramadani <br />is a Brooklyn-based data analyst and web
+                  developer. She is currently a candidate for a Master's degree
+                  in Data Analytics & Visualization at the CUNY Graduate Center.
+                  <br />
+                  <br />
+                  She graduated from Macaulay Honors College at Baruch College
+                  in 2017 with a degree in English and Political Science, which
+                  trained her attention to detail and developed her logic
+                  skills. It also made her prone to writing her own biographies
+                  in the third person. When she's not building websites,
+                  scrutinizing data, or creating fun vizzes, you can usually
+                  find her drawing, writing, or making music.
+                </p>
+                <br /><br />
+              </div>
+            </div>
+            <div class="col-3"></div>
+          </div>
+          <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+          <div class="mobileBio row justify-content-center p-5">
+            <div
+              class="col-12"
+              style="
+                width: 450px;
+                padding: 2px;
+                background-color: black;
+                opacity: 0.85;
+                color: white;
+              "
+            >
+              <p class="text-center p-3" style="font-size: 18px">
+                Joanne Ramadani <br />is a Brooklyn-based data analyst and web
+                  developer. She is currently a candidate for a Master's degree
+                  in Data Analytics & Visualization at the CUNY Graduate Center.
+                  <br />
+                  <br />
+                  She graduated from Macaulay Honors College at Baruch College
+                  in 2017 with a degree in English and Political Science, which
+                  trained her attention to detail and developed her logic
+                  skills. It also made her prone to writing her own biographies
+                  in the third person. When she's not building websites,
+                  scrutinizing data, or creating fun vizzes, you can usually
+                  find her drawing, writing, or making music.
+                  
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--ALL LANGUAGES I KNOW-->
+      <div id="stacks">
+        <!--PARALLAX HERE, SEMI-OPAQUE BOX AND THEN BOXES ON TOP-->
+        <div style="padding-top: 50px">
+          <div class="text-center p-5">
+            <h2
+              class="stack"
+              data-toggle="tooltip"
+              data-placement="top"
+              title="For non-devs, a stack is a set of coding languages you know."
+            >
+              Code Stack
+            </h2>
+          </div>
+          <!-- Icons for reference -->
+          <div class="row m-5 justify-content-center">
+            <!-- HTML -->
+            <a><i
+              class="fab fa-html5 fa-4x icon"
+              data-toggle="tooltip"
+              data-placement="top"
+              title="Four years of experience with HTML"
+              aria-label="HTML5"
+            ></i></a>
+
+            <!-- CSS  -->
+            <a><i
+              class="fab fa-css3-alt fa-4x icon"
+              data-toggle="tooltip"
+              data-placement="top"
+              title="Four years of experience with CSS"
+              aria-label="CSS3"
+            ></i></a>
+
+            <!-- JavaScript -->
+            <a><i
+              class="fab fa-js-square fa-4x icon"
+              data-toggle="tooltip"
+              data-placement="top"
+              title="Two years of experience with JS"
+              aria-label="JavaScript"
+            ></i></a>
+
+            <!-- Vue -->
+            <a><i
+              class="fab fa-vuejs fa-4x icon"
+              data-toggle="tooltip"
+              data-placement="top"
+              title="One month of experience with Vue"
+              aria-label="Vue.js"
+            ></i>
+
+            <!-- Node -->
+            <a><i
+              class="fab fa-node-js fa-4x icon"
+              data-toggle="tooltip"
+              data-placement="top"
+              title="One year of experience with Node"
+              aria-label="Node.js"
+            ></i></a>
+
+            <!-- Python -->
+            <a><i
+              class="fab fa-python fa-4x icon"
+              data-toggle="tooltip"
+              data-placement="top"
+              title="One year of experience with Python"
+              aria-label="Python"
+            ></i></a>
+          </div>
+<p class="text-center">+ <br> <br>SQL | PHP</p>
+<div class="row m-5 justify-content-center">
+  <div class="text-center p-5">
+            <h2
+              class="stack text-center p-5"
+            >
+              Software Toolset
+            </h2>
+
+
+  
+
+            <img src="https://cdns.tblsft.com/sites/default/files/media/tableau-logo-transparent-fff.png" style="width: 50%" alt="Tableau Desktop Professional">
+
+</div>
+          </div>
+
+        </div>
+      </div>
+
+      <!--GRID OF WEB PORTFOLIO WORK-->
+      <div id="work">
+        <div class="container-fluid">
+          <h2 class="text-center p-5" style="color: #31a2aa">Past Projects</h2>
+           
+
+          <h6 class="text-center" style="color: #31a2aa">
+            Click an image for details on the project
+          </h6>
+
+          <br>
+
+<div class="row">
+          <div class="col-md-6 align-items-center">
+            <div class="piCont"><iframe  width="100%" height="510" frameborder="0"
+              src="https://observablehq.com/embed/@jramadani/ny-millennials-attributes?cell=title&cell=millsleg&cell=chart"></iframe></div>
+            
+            </div>
+            <div class="col-md-6 align-items-center">
+            <div class='piCont' id='viz1606027207561' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Am&#47;AmericanBehemothOurTrillion-DollarHealthcareSystem&#47;AmericanBehemoth&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='AmericanBehemothOurTrillion-DollarHealthcareSystem&#47;AmericanBehemoth' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Am&#47;AmericanBehemothOurTrillion-DollarHealthcareSystem&#47;AmericanBehemoth&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1606027207561');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+          </div>
+        </div>
+
+        
+  <div class="row align-items-center p-5">
+
+
+            <div class="col-12 col-md-6">
+              <div class="piCont">
+                <img
+                  id="tweaking"
+                  width="400px"
+                  class="portfolioImages"
+                  src="./resources/images/sosa-aboutpage.png"
+                  data-toggle="modal"
+                  data-target="#sosaModal"
+                />
+                <div
+                  class="modal fade"
+                  id="sosaModal"
+                  tabindex="-1"
+                  role="dialog"
+                  aria-labelledby="sosaModal"
+                  aria-hidden="true"
+                >
+                  <div
+                    class="modal-dialog modal-lg modal-dialog-centered"
+                    role="document"
+                  >
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title">
+                          <b>Website:</b> About - Soaring Sails
+                        </h5>
+                        <button
+                          type="button"
+                          class="close"
+                          data-dismiss="modal"
+                          aria-label="Close"
+                        >
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <p><b>Year Completed:</b> 2016</p>
+                        <p>
+                          <b>Project:</b> Soaring Sails (A FATE Core Campaign)
+                          Blog
+                        </p>
+                        <a
+                          class="textLink"
+                          href="https://jramadani.github.io/sosa-about-page"
+                          >Click here to see the working site.</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6">
+              <div class="piCont">
+                <img
+                  id="tweaking"
+                  width="400px"
+                  class="portfolioImages"
+                  src="./resources/images/delian-site.png"
+                  data-toggle="modal"
+                  data-target="#delModal"
+                />
+
+                <div
+                  class="modal fade"
+                  id="delModal"
+                  tabindex="-1"
+                  role="dialog"
+                  aria-labelledby="sosaModal"
+                  aria-hidden="true"
+                >
+                  <div
+                    class="modal-dialog modal-lg modal-dialog-centered"
+                    role="document"
+                  >
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title"><b>Website:</b> Carry Me!</h5>
+                        <button
+                          type="button"
+                          class="close"
+                          data-dismiss="modal"
+                          aria-label="Close"
+                        >
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <p><b>Year Completed:</b> 2018</p>
+                        <p>
+                          <b>Project:</b> City College Web Development Program -
+                          JS Project
+                        </p>
+                        <a
+                          class="textLink"
+                          href="https://jramadani.github.io/joanne-ramadani-CCNY-JS-final-project/index.html"
+                          >Click here to see the working site.</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      
+      <div id="contact">
+        <div class="row" style="position: absolute; bottom:0;">
+          <div class="col-12" style="margin-top: 5px; padding-left: 50px; ">
+
+            <div class="row align-items-center">
+              <a href="https://observablehq.com/@jramadani"
+                ><svg style="height: 50px; width: 50px"
+                data-toggle="tooltip"
+                data-placement="top"
+                aria-label="Observable HQ profile"
+                title="Click here to view my Observable profile!"
+                >
+                  <path
+                    d="M12.5 22.6667C11.3458 22.6667 10.3458 22.4153 9.5 21.9127C8.65721 21.412 7.98339 20.7027 7.55521 19.8654C7.09997 18.9942 6.76672 18.0729 6.56354 17.1239C6.34796 16.0947 6.24294 15.0483 6.25 14C6.25 13.1699 6.30417 12.3764 6.41354 11.6176C6.52188 10.8598 6.72292 10.0894 7.01563 9.30748C7.30833 8.52555 7.68542 7.84763 8.14479 7.27274C8.62304 6.68378 9.24141 6.20438 9.95208 5.87163C10.6979 5.51244 11.5458 5.33333 12.5 5.33333C13.6542 5.33333 14.6542 5.58467 15.5 6.08733C16.3428 6.588 17.0166 7.29733 17.4448 8.13459C17.8969 8.99644 18.2271 9.9103 18.4365 10.8761C18.6448 11.841 18.75 12.883 18.75 14C18.75 14.8301 18.6958 15.6236 18.5865 16.3824C18.4699 17.1702 18.2639 17.9446 17.9719 18.6925C17.6698 19.4744 17.2948 20.1524 16.8427 20.7273C16.3906 21.3021 15.7927 21.7692 15.0479 22.1284C14.3031 22.4876 13.4542 22.6667 12.5 22.6667ZM14.7063 16.2945C15.304 15.6944 15.6365 14.864 15.625 14C15.625 13.1073 15.326 12.3425 14.7292 11.7055C14.1313 11.0685 13.3885 10.75 12.5 10.75C11.6115 10.75 10.8688 11.0685 10.2708 11.7055C9.68532 12.3123 9.36198 13.1405 9.375 14C9.375 14.8927 9.67396 15.6575 10.2708 16.2945C10.8688 16.9315 11.6115 17.25 12.5 17.25C13.3885 17.25 14.124 16.9315 14.7063 16.2945ZM12.5 27C19.4031 27 25 21.1792 25 14C25 6.82075 19.4031 1 12.5 1C5.59687 1 0 6.82075 0 14C0 21.1792 5.59687 27 12.5 27Z"
+                    fill="black"
+                  ></path></svg
+              ></a>
+            <a href="https://twitter.com/joannealytics"
+              ><i class="fab fa-twitter fa-2x contactIcon" data-toggle="tooltip"
+              data-placement="top"
+              aria-label="Twitter profile"
+              title="View my data thoughts here!"></i
+            ></a>
+            <a href="https://github.com/jramadani"
+              ><i class="fab fa-github fa-2x contactIcon" data-toggle="tooltip"
+              data-placement="top"
+              aria-label="GitHub profile"
+              title="Look through my GitHub repositories here!"></i
+            ></a>
+            <a href="https://www.linkedin.com/in/joanne-ramadani/"
+              ><i class="fab fa-linkedin fa-2x contactIcon" data-toggle="tooltip"
+              data-placement="top"
+              aria-label="LinkedIn profile"
+              title="Click here to view my LinkedIn!"></i
+            ></a>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
