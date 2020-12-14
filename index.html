@@ -59,7 +59,7 @@
         display: block;
         width: 35%;
       }
-      .iconSet:hover{
+      .fas:hover{
         color:white;
       }
 
@@ -77,6 +77,26 @@
 
       .textLink:hover {
         color: seagreen;
+      }
+      .text{
+        color:white;
+      }
+
+      .gridcontainer{
+        display:grid;
+        grid-template-rows: auto;
+        grid-template-columns: 66% 34%;
+        padding:20px;
+      }
+
+      .workImages{
+        grid-column-start:1;
+        padding:10px;
+      }
+
+      .workDescription{
+        grid-column-start: 2;
+        padding:10px;
       }
 
       html {
@@ -118,13 +138,13 @@
         background-color: #fcc256;
       }
       #work {
-        height: 150vh;
-        background-color: #fffae3;
+        height: 1900px;
+        background-color: #45b2b6;
       }
 
       #contact {
-        background-color:  #fffae3;
-        height:20vh;
+        background-color:  #45b2b6;
+        height:10vh;
       }
 
       /*LOCAL MEDIA QUERIES FOR MOBILE USABILITY*/
@@ -440,138 +460,29 @@
       <!--GRID OF WEB PORTFOLIO WORK-->
       <div id="work">
         <div class="container-fluid">
-          <h2 class="text-center p-5" style="color: #31a2aa">Past Projects</h2>
-           
+          <h2 class="text-center p-5 text">Past Work and Projects</h2>
 
-          <h6 class="text-center" style="color: #31a2aa">
-            Click an image for details on the project
-          </h6>
+          <div class="gridcontainer">
 
-          <br>
-
-<div class="row">
-          <div class="col-md-6 align-items-center">
-            <div class="piCont"><iframe  width="100%" height="510" frameborder="0"
-              src="https://observablehq.com/embed/@jramadani/ny-millennials-attributes?cell=title&cell=millsleg&cell=chart"></iframe></div>
-            
+            <div class="workImages"><a href="https://jramadani.github.io/housing-data"><img width="100%" src="/resources/images/projectpreview.png"></a></div>
+            <div class="workDescription">
+              <h5><a href="https://jramadani.github.io/housing-data">Affording the American Dream</a></h5>
+              <p>Affording the American Dream seeks to give the user an overview of the housing market over a ten year range while also allowing them to drill down into the details by zip code as a springboard into understanding the shifts of American housing values. What does the landscape of typical home values look like in the United States? What does an affordable house look like, and how has it changed over the last decade? Users can interact with the dashboard, toggling a switch for the start and end of the decade, entering different gross annual incomes, and clicking on, panning, and zooming on the map in order to dive into those details and explore how the landscape has changed from 2009 to 2019. </p>
+              <p><i>Completed Fall 2020</i></p>
             </div>
-            <div class="col-md-6 align-items-center">
-            <div class='piCont' id='viz1606027207561' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Am&#47;AmericanBehemothOurTrillion-DollarHealthcareSystem&#47;AmericanBehemoth&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='AmericanBehemothOurTrillion-DollarHealthcareSystem&#47;AmericanBehemoth' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Am&#47;AmericanBehemothOurTrillion-DollarHealthcareSystem&#47;AmericanBehemoth&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1606027207561');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
-          </div>
-        </div>
-
-        
-  <div class="row align-items-center p-5">
-
-
-            <div class="col-12 col-md-6">
-              <div class="piCont">
-                <img
-                  id="tweaking"
-                  width="400px"
-                  class="portfolioImages"
-                  src="./resources/images/sosa-aboutpage.png"
-                  data-toggle="modal"
-                  data-target="#sosaModal"
-                />
-                <div
-                  class="modal fade"
-                  id="sosaModal"
-                  tabindex="-1"
-                  role="dialog"
-                  aria-labelledby="sosaModal"
-                  aria-hidden="true"
-                >
-                  <div
-                    class="modal-dialog modal-lg modal-dialog-centered"
-                    role="document"
-                  >
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <h5 class="modal-title">
-                          <b>Website:</b> About - Soaring Sails
-                        </h5>
-                        <button
-                          type="button"
-                          class="close"
-                          data-dismiss="modal"
-                          aria-label="Close"
-                        >
-                          <span aria-hidden="true">&times;</span>
-                        </button>
-                      </div>
-                      <div class="modal-body">
-                        <p><b>Year Completed:</b> 2016</p>
-                        <p>
-                          <b>Project:</b> Soaring Sails (A FATE Core Campaign)
-                          Blog
-                        </p>
-                        <a
-                          class="textLink"
-                          href="https://jramadani.github.io/sosa-about-page"
-                          >Click here to see the working site.</a
-                        >
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+            <div class="workImages"><a href="https://observablehq.com/@jramadani/ny-millennials-attributes"><img width="100%" src="/resources/images/NYmillsnotitle.png"></a></div>
+            <div class="workDescription">
+              <h5><a href="https://observablehq.com/@jramadani/ny-millennials-attributes">NY Millennials Attributes</a></h5>
+              <p>This is a smaller visualization built to test a calendar heatmap in Observable, as well as to visualize procedurally generated data.<br>
+                <p><i>Completed September 2020, updated November 2020</i></p>
             </div>
-
-            <div class="col-12 col-md-6">
-              <div class="piCont">
-                <img
-                  id="tweaking"
-                  width="400px"
-                  class="portfolioImages"
-                  src="./resources/images/delian-site.png"
-                  data-toggle="modal"
-                  data-target="#delModal"
-                />
-
-                <div
-                  class="modal fade"
-                  id="delModal"
-                  tabindex="-1"
-                  role="dialog"
-                  aria-labelledby="sosaModal"
-                  aria-hidden="true"
-                >
-                  <div
-                    class="modal-dialog modal-lg modal-dialog-centered"
-                    role="document"
-                  >
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <h5 class="modal-title"><b>Website:</b> Carry Me!</h5>
-                        <button
-                          type="button"
-                          class="close"
-                          data-dismiss="modal"
-                          aria-label="Close"
-                        >
-                          <span aria-hidden="true">&times;</span>
-                        </button>
-                      </div>
-                      <div class="modal-body">
-                        <p><b>Year Completed:</b> 2018</p>
-                        <p>
-                          <b>Project:</b> City College Web Development Program -
-                          JS Project
-                        </p>
-                        <a
-                          class="textLink"
-                          href="https://jramadani.github.io/joanne-ramadani-CCNY-JS-final-project/index.html"
-                          >Click here to see the working site.</a
-                        >
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+            <div class="workImages"><a href="https://public.tableau.com/profile/joanne.ramadani#!/vizhome/AmericanBehemothOurTrillion-DollarHealthcareSystem/AmericanBehemoth"><img width="100%" src="/resources/images/ABpt2.png"></a></div>
+            <div class="workDescription">
+              <h5><a href="https://public.tableau.com/profile/joanne.ramadani#!/vizhome/AmericanBehemothOurTrillion-DollarHealthcareSystem/AmericanBehemoth">American Behemoth: Our Trillion-Dollar Healthcare System</a></h5>
+              <p>Using the 2017 data from the Center of Medicare and Medicaid Services, I analyzed healthcare costs and their projections from 2018-2027 in order to figure out if we'll get any relief with regard to the rising cost of healthcare.</p>
+              <p><i>Completed Fall 2019</i></p>
             </div>
           </div>
-        </div>
       </div>
 
       
