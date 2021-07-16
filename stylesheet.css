@@ -40,7 +40,7 @@ html {
   min-height: 100%;
 }
 body {
-  margin-bottom: 60px; /* Margin bottom by footer height */
+  margin-bottom: -100px; /* Margin bottom by footer height */
 }
 
 @media only screen and (min-width: 992px) {
@@ -65,6 +65,11 @@ body {
 
   .desktopCarousel {
     display: none;
+  }
+
+  #contact,
+  body:after {
+    height: 100px;
   }
 }
 

@@ -52,12 +52,11 @@
       .headerFont {
         font-family: "UNNA", serif;
       }
-      .localButton {
-        transform: translate(-50%, 50%);
-      }
+      
       .iconSet {
         display: block;
         width: 35%;
+        margin:auto;
       }
       .fas:hover{
         color:white;
@@ -75,9 +74,6 @@
         margin-bottom: 10px;
       }
 
-      .textLink:hover {
-        color: seagreen;
-      }
       .text{
         color:white;
       }
@@ -145,13 +141,13 @@
         background-color: #fcc256;
       }
       #work {
-        height: 2500px;
+        height: 3500px;
         background-color: #45b2b6;
       }
 
       #contact {
         background-color:  #45b2b6;
-        height:10vh;
+        height:100px;
       }
 
       /*LOCAL MEDIA QUERIES FOR MOBILE USABILITY*/
@@ -223,9 +219,8 @@
               <li class="nav-item">
                 <a class="nav-link" href="#work">Past Projects</a>
               </li>
-
-              <li class="nav-item">
-                <a class="nav-link" href="#contact">Contact</a>
+                            <li class="nav-item">
+                <a class="nav-link" href="#contact">Find Me Elsewhere</a>
               </li>
             </ul>
           </div>
@@ -289,16 +284,6 @@
                 </a>
               </div>
             </div>
-            <div class="col" style="margin-top: 10px">
-              <div class="siBu">
-                <a href="#contact">
-                  <i
-                    style="margin-left: 17px; margin-top: 16px"
-                    class="fas fa-envelope"
-                  ></i>
-                </a>
-              </div>
-            </div>
           </div>
         </div>
       </div>
@@ -324,7 +309,7 @@
                   class="text-center p-3"
                   style="margin: 15px; font-size: 18px"
                 >
-                  Joanne Ramadani <br />is a Brooklyn-based data analyst and web
+                  Joanne Ramadani <br />is a Brooklyn-based data analyst, visualization designer, and web
                   developer. She is currently a candidate for a Master's degree
                   in Data Analytics & Visualization at the CUNY Graduate Center.
                   <br />
@@ -355,7 +340,7 @@
               "
             >
               <p class="text-center p-3" style="font-size: 18px">
-                Joanne Ramadani <br />is a Brooklyn-based data analyst and web
+                Joanne Ramadani <br />is a Brooklyn-based data analyst, visualization designer, and web
                   developer. She is currently a candidate for a Master's degree
                   in Data Analytics & Visualization at the CUNY Graduate Center.
                   <br />
@@ -395,7 +380,7 @@
               class="fab fa-html5 fa-4x icon"
               data-toggle="tooltip"
               data-placement="top"
-              title="Four years of experience with HTML"
+              title="Five years of experience with HTML"
               aria-label="HTML5"
             ></i></a>
 
@@ -404,7 +389,7 @@
               class="fab fa-css3-alt fa-4x icon"
               data-toggle="tooltip"
               data-placement="top"
-              title="Four years of experience with CSS"
+              title="Five years of experience with CSS"
               aria-label="CSS3"
             ></i></a>
 
@@ -413,7 +398,7 @@
               class="fab fa-js-square fa-4x icon"
               data-toggle="tooltip"
               data-placement="top"
-              title="Two years of experience with JS"
+              title="Three years of experience with JS"
               aria-label="JavaScript"
             ></i></a>
 
@@ -422,7 +407,7 @@
               class="fab fa-vuejs fa-4x icon"
               data-toggle="tooltip"
               data-placement="top"
-              title="One month of experience with Vue"
+              title="Six months of experience with Vue"
               aria-label="Vue.js"
             ></i>
 
@@ -440,7 +425,7 @@
               class="fab fa-python fa-4x icon"
               data-toggle="tooltip"
               data-placement="top"
-              title="One year of experience with Python"
+              title="Two years of experience with Python"
               aria-label="Python"
             ></i></a>
           </div>
@@ -470,18 +455,39 @@
           <h2 class="text-center p-5 text">Past Work and Projects</h2>
 
           <div class="gridcontainer">
+            <div class="workImages"><a href="https://jramadani.github.io/geo-repspending/"><img width="100%" src="/resources/images/georep.png"></a></div>
+            <div class="workDescription"><div class="bgDescrip">
+              <h5><a href="https://jramadani.github.io/geo-repspending/">Dollars to Districts:<br> A Geographic Analysis of Representative Spending</a></h5>
+              <p>Dollars to Districts takes the premise of accountability in government and turns it on its head to ask a question not of corruption but of the side effects of the purposeful enormity of our republic: to what extent does geography factor into our representatives' budgetary spending habits?</p>
+              <p>Built in approximately one week using Vue, d3, and Mapbox GL JS. Initial data processing, cleaning, mapping, and exploration was done using QGIS.</p>
+              <p><i>Completed Spring 2021</i></p>
+            </div>
+            </div>
+
+            <div class="workImages"><a href="https://freedom-of-speech-project.github.io/fos/index.html"><img width="100%" src="/resources/images/fos.png"></a></div>
+            <div class="workDescription"><div class="bgDescrip">
+              <h5><a href="https://freedom-of-speech-project.github.io/fos/index.html">Freedom of Speech Project</a> <span style="font-size:12px;">(Group Project)</span></h5>
+
+              <p>Freedom of Speech* is a web project that helps users to understand the First Amendment right to freedom of speech through interactive visualizations of Supreme Court verdicts that have expanded or contracted the definition of “free speech” over the history of the United States. </p>
+              <p>Built using Vue and d3.</p>
+              <p><i>Version 1.0 Completed Spring 2021</i></p>
+            </div>
+            </div>
+
 
             <div class="workImages"><a href="https://jramadani.github.io/housing-data"><img width="100%" src="/resources/images/projectpreview.png"></a></div>
             <div class="workDescription"><div class="bgDescrip">
               <h5><a href="https://jramadani.github.io/housing-data">Affording the American Dream</a></h5>
               <p>Affording the American Dream seeks to give the user an overview of the housing market over a ten year range while also allowing them to drill down into the details by zip code as a springboard into understanding the shifts of American housing values. What does the landscape of typical home values look like in the United States? What does an affordable house look like, and how has it changed over the last decade? Users can interact with the dashboard, toggling a switch for the start and end of the decade, entering different gross annual incomes, and clicking on, panning, and zooming on the map in order to dive into those details and explore how the landscape has changed from 2009 to 2019. </p>
+              <p>Built using d3 and Mapbox GL JS.</p>
               <p><i>Completed Fall 2020</i></p>
             </div>
             </div>
             <div class="workImages"><a href="https://observablehq.com/@jramadani/ny-millennials-attributes"><img width="100%" src="/resources/images/NYmillsnotitle.png"></a></div>
             <div class="workDescription"><div class="bgDescrip">
               <h5><a href="https://observablehq.com/@jramadani/ny-millennials-attributes">NY Millennials Attributes</a></h5>
-              <p>This is a smaller visualization built to test a calendar heatmap in Observable, as well as to visualize procedurally generated data.<br>
+              <p>This is a smaller visualization built to test a calendar heatmap in Observable, as well as to visualize procedurally generated data.</p>
+              <p>Built in Observable using d3.</p>
                 <p><i>Completed September 2020, updated November 2020</i></p>
               </div>
             </div>
@@ -489,14 +495,19 @@
             <div class="workDescription"><div class="bgDescrip">
               <h5><a href="https://public.tableau.com/profile/joanne.ramadani#!/vizhome/AmericanBehemothOurTrillion-DollarHealthcareSystem/AmericanBehemoth">American Behemoth:<br> Our Trillion-Dollar Healthcare System</a></h5>
               <p>Using the 2017 data from the Center of Medicare and Medicaid Services, I analyzed healthcare costs and their projections from 2018-2027 in order to figure out if we'll get any relief with regard to the rising cost of healthcare.</p>
+              <p>Built using Tableau.</p>
               <p><i>Completed Fall 2019</i></p>
             </div>
             </div>
+
           </div>
       </div>
 
       
-      <div id="contact">
+
+    </div>
+  </body>
+        <footer id="contact">
         <div class="row" style="position: absolute; bottom:0;">
           <div class="col-12" style="margin-top: 5px; padding-left: 50px; ">
 
@@ -534,7 +545,5 @@
           </div>
           </div>
         </div>
-      </div>
-    </div>
-  </body>
+      </footer>
 </html>
