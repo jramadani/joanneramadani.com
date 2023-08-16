@@ -1,3 +1,7 @@
+html, body{
+    overflow-x: hidden;
+}
+
 body{
     padding:0px;
     margin:0px;
@@ -6,7 +10,6 @@ body{
     right:0;
     bottom:0;
     font-family: 'Lato', sans-serif;
-    overflow-x: hidden;
     background-color: #F6F5F3;
 }
 
