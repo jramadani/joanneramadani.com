@@ -6,30 +6,30 @@ const center = [width / 2, height / 2];
 
 
 if (window.innerWidth > 1800){
-    circleArt(width, height * 1.5, 500, 4, center[0] / 3 + margin.left , center[1], 9)
+    circleArt(width, height * 1.5, 500, 4, center[0] / 3 + margin.left , center[1], 9, "0 0 700 700")
 }
 
 if (window.innerWidth < 1300 && window.innerWidth > window.innerHeight){
-    circleArt(width, height * 1.5, 200, 2, center[0] / 1.5 + margin.left , center[1] + 20, 9)
+    circleArt(width, height * 1.5, 200, 2, center[0] / 1.5 + margin.left , center[1] + 20, 9, "0 0 700 700")
 }
 
 if (((window.innerWidth / window.innerHeight) > 3/2) && window.innerWidth <= 1800 && window.innerWidth >=1300){
-    circleArt(width, height * 1.5, 500, 4, center[0], center[1] + 20, 9)
+    circleArt(width, height * 1.5, 500, 4, center[0], center[1] + 20, 9, "0 0 700 700")
 }
 
 if ((window.innerWidth / window.innerHeight) < 3/2 && window.innerHeight > window.innerWidth){
-    circleArt(width * 1.5, height, 125, 3, center[0] + margin.left * 1.5, center[1] + margin.top * 3.25, 4)
+    circleArt(width * 1.5, height, 125, 3, center[0] + margin.left * 1.5, center[1] + margin.top * 1.5, 4, "0 0 450 450")
 }
 
 
-function circleArt(x, y, n, r, cx, cy, j){
+function circleArt(w, h, points, r, cx, cy, j, viewbox){
 
     //constants
-    const color = d3.scaleSequential(d3.interpolateViridis).domain([0, n]);
+    const color = d3.scaleSequential(d3.interpolateViridis).domain([0, points]);
 
 
     //build random data
-    const data = Array.from({ length: n }, (_, i) => ({
+    const data = Array.from({ length: points }, (_, i) => ({
     r: 1.88 * (4 + j * Math.random() ** 1.5),
     color: color(i),
     }));
@@ -39,8 +39,9 @@ function circleArt(x, y, n, r, cx, cy, j){
     let svg = container
     .append("svg")
     .attr("id", "chartcanvas")
-    .attr("width", x)
-    .attr("height", y)
+    .attr("viewBox", viewbox)
+    .attr("width", w)
+    .attr("height", h)
     .attr("font-family", "sans-serif")
     .attr("font-size", 10);
 
@@ -75,20 +76,3 @@ function circleArt(x, y, n, r, cx, cy, j){
     }
 
 }
-
-
-// below is archived
-
-// function codeView(language, replacement) {
-//   d3.select(language)
-//     .on("mouseover", (e) => {
-//       d3.select("#examples").style("font-size", "12px");
-//       d3.select("#examples").html(replacement);
-//     })
-//     .on("mouseout", (e) => {
-//       d3.select("#examples").style("font-size", "26px");
-//       d3.select("#examples").html(
-//         `Hover over the code language to see snippets of project code`
-//       );
-//     });
-// }
