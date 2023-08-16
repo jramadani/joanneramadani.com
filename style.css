@@ -256,6 +256,8 @@ h2{
 footer{
     padding-top:70px;
     padding-bottom:10px;
+    text-align: center;
+    font-size: 20px;
 }
 
 }
@@ -297,15 +299,15 @@ footer{
  width:70%;   
 }
 .navbar{
-    float:left;
+    float:right;
     position:fixed;
     top:0;
-    left:0;
+    right:0;
     z-index:99999;
 }
 
 .navbar ul{
-    padding-left:10px;
+    padding-right:10px;
     margin-top:5px;
 }
 
@@ -343,14 +345,15 @@ footer{
     background-color: hsla(182, 45%, 49%, 1);
     /* margin: 50px 0px 50px 0px; */
     border-radius: 60%;
-    transform:rotate(-90deg);
+    transform:rotate(-135deg);
     /* right:-25%; */
+    left: -25%;
     top:-25%;
     position:absolute;
 }
 #chart svg{
     /* margin-left:10vw; */
-    transform:rotate(90deg);
+    transform:rotate(135deg);
 
 }
 
@@ -442,8 +445,9 @@ hr{
 }
 
 footer{
-    padding-top:70px;
-    padding-bottom:20px;
+    padding: 70px 20px 20px 20px;
+    font-size:16px;
+    text-align: center;
 }
 
 }
@@ -615,71 +619,6 @@ footer{
         font-size: 20px;
     }
     
-    /* below has been archived temporarily */
-    
-    /* #examples{
-        padding-top:20px;
-        padding-left:20px;
-        color:white;
-        margin:0;
-    }
-    
-    
-    .boxlinks{
-        color:white;
-    }
-    
-    .boxlinks:visited{
-        color:#F6F5F3;
-    }
-    
-    .tools{
-        grid-template-rows:auto auto;
-        display: grid;
-    }
-    
-    .code-icons{
-        width:50px;
-    }
-    
-    .code-list, .bi-softwares{
-        grid-template-columns: 45% 55%;
-        display: grid;
-        padding-bottom:100px;
-    }
-    
-    .code-list{
-        grid-row: 1;
-    }
-    .bi-softwares{
-        grid-row:2;
-    }
-    
-    .stack, .bi-icons{
-        display: grid;
-        place-self: center;
-        grid-column: 1;
-    }
-    
-    #stack-display, #bi-display{
-        grid-column: 2;
-        place-self: center;
-    }
-    
-    .window-base{
-        width:600px;
-        height:400px;
-        background-color: #2F2F2F;
-    }
-    
-    .window-bar{
-        background-color: #D9D9D9;
-        width:600px;
-        height:15px;
-    } */
-    
-    
-    
     /* section four */
     
     #work{
@@ -725,6 +664,8 @@ footer{
     footer{
         padding-top:70px;
         padding-bottom:10px;
+        text-align: center;
+        font-size:20px;
     }
     
     }
