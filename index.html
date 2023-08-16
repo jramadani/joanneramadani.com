@@ -1,549 +1,176 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <title>Joanne Ramadani - Data Analytics & Web Development</title>
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
-    <link rel="stylesheet" type="text/css" href="stylesheet.css" />
-    <link href="./resources/css/all.css" rel="stylesheet" />
+<html>
+    <head>
+<meta charset="utf-8" />
+<title>Joanne Ramadani - Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400&family=Unna&di0s1play=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="style.css" />
+    <body>
 
-    <!--BOOTSTRAP LINKS BELOW-->
-
-    <!-- CSS -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-
-<!-- jQuery and JS bundle w/ Popper.js -->
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
-
-    <!--RESPONSIVE META TAG-->
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-
-    <!--EXTERNAL FONTS-->
-    <link
-      href="https://fonts.googleapis.com/css?family=Cormorant|Jura|Oranienbaum|Unna"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
-      integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
-      crossorigin="anonymous"
-    />
-    <script>
-      //tooltip function
-      $(function () {
-        $('[data-toggle="tooltip"]').tooltip();
-      });
-    </script>
-
-    <!--LOCAL STYLE-->
-    <style>
-      a {
-        color: black;
-      }
-      .icon:hover {
-        color: white;
-        text-decoration: none;
-      }
-      .headerFont {
-        font-family: "UNNA", serif;
-      }
-      
-      .iconSet {
-        display: block;
-        width: 35%;
-        margin:auto;
-      }
-      .fas:hover{
-        color:white;
-      }
-
-      .contactIcon {
-  padding-bottom: 20px;
-  padding-right:20px;
-}
-.contactIcon:hover{
-  color:black;
-}
-
-      .desktopBio {
-        margin-bottom: 10px;
-      }
-
-      .text{
-        color:white;
-      }
-
-      .gridcontainer{
-        display:grid;
-        grid-template-rows: auto;
-        grid-template-columns: 66% 34%;
-        padding:20px;
-      }
-
-      .workImages{
-        grid-column-start:1;
-        padding:20px;
-      }
-
-      .workDescription{
-        grid-column-start: 2;
-        padding:20px;
-
-      }
-
-      .bgDescrip{
-        background-color: rgba(224, 224, 224, 0.418);
-        border-radius: 5px;
-        padding:10px;
-      }
-
-      html {
-        scroll-behavior: smooth;
-      }
-
-      body {
-        background-image: url("./resources/images/FRA-1470871.jpg");
-        background-size: cover;
-        background-position: top center;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        margin: 0px;
-        padding: 0px;
-        overflow-y: scroll;
-        overflow-x: hidden;
-        -webkit-font-smoothing: antialiased;
-      }
-
-      #home {
-        height: 100vh;
-      }
-      #about {
-        height: 100vh;
-        background-image: url("./resources/images/presentation.jpg");
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        margin: 0px;
-        padding: 0px;
-        overflow-x: hidden;
-        overflow-y: hidden;
-        -webkit-font-smoothing: antialiased;
-      }
-
-      #stacks {
-        height: 100vh;
-        background-color: #fcc256;
-      }
-      #work {
-        height: fit-content;
-        background-color: #45b2b6;
-      }
-
-      #contact {
-        background-color:  #45b2b6;
-        height:100px;
-      }
-
-      /*LOCAL MEDIA QUERIES FOR MOBILE USABILITY*/
-      @media only screen and (min-width: 992px) {
-        .mobileContent {
-          display: none;
-        }
-
-        .mobileBio {
-          display: none;
-        }
-      }
-
-      @media only screen and (max-width: 992px) {
-        .iconSet {
-          display: none;
-        }
-
-        .homeHub {
-          display: none;
-        }
-
-        .desktopBio {
-          display: none;
-        }
-
-        .workMobile {
-          height: 1500px;
-        }
-      }
-    </style>
-  </head>
-  <body>
-    <div class="mobileContent">
-      <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
-        <img src="./resources/images/left-curl.png" width="50px" />
-        <button
-          style="margin: auto"
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarNavDropdown"
-          aria-controls="navbarNavDropdown"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <img
-          src="./resources/images/right-curl.png"
-          class="right-curlMobile"
-          width="50px"
-        />
-
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <div class="text-center">
-            <ul class="navbar-nav">
-              <li class="nav-item active">
-                <a class="nav-link" href="#home"
-                  >Home <span class="sr-only">(current)</span></a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#about">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#stacks">Stacks</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#work">Past Projects</a>
-              </li>
-                            <li class="nav-item">
-                <a class="nav-link" href="#contact">Find Me Elsewhere</a>
-              </li>
+<div id="home">
+    <div class="ss-one">
+        <div class="navbar">
+            <ul>
+                <li><a href="/" title="Refresh the page"><img src="./assets/icons/Vector-1.svg"></a></li>
+                <li><a href="https://observablehq.com/@jramadani" title="Observable" target="_blank"><img src="./assets/icons/Vector.svg"></a></li>
+                <li><a href="https://www.linkedin.com/in/joanne-ramadani/" title="LinkedIn" target="_blank"><img src="./assets/icons/bi_linkedin.svg"></a></li>
+                <li><a href="https://github.com/jramadani" title="GitHub" target="_blank"><img src="./assets/icons/Group.svg"></a></li>
             </ul>
-          </div>
-        </div>
 
-        <img
-          src="./resources/images/right-curl.png"
-          class="right-curlDesktop"
-          width="50px"
-        />
-      </nav>
+        </div>
+        <div class="intro-title"><h1>JOANNE <br> RAMADANI</h1> 
+            <p style="text-align:center; font-size:28px; font-weight:300;">DATA ✨ DESIGN ✨ DEVELOPMENT</p></div>
+        <div class="list-items">
+            <li> ➵ &nbsp;&nbsp; <a href="#about">about</a></li>
+            <li> ➵ &nbsp;&nbsp; <a href="#tools">tools</a></li>
+            <li> ➵ &nbsp;&nbsp; <a href="#work">work</a></li>
+        </div>
     </div>
-    <!-- END OF MOBILE CONTENT  -->
-
-    <div class="desktopContent">
-      <!--RETURN HOME- in upper left hand corner-->
-      <div class="homeHub sticky-top">
-        <a href="#home"><i class="fas fa-home" style="padding: 10px"></i></a>
-      </div>
-      <!--MAIN PAGE-->
-      <div id="home" class="sectionOne">
-        <div class="sectionOneBg mx-auto"></div>
-        <div class="container">
-          <br /><br /><br /><br /><br /><br /><br /><br /><br />
-          <div style="background-color: white; opacity: 0.75; padding: 45px">
-            <h1 class="text-center headerFont">JOANNE RAMADANI</h1>
-            <h3 class="text-center headerFont">
-              DATA ANALYTICS ✩ DESIGN ✩ WEB DEVELOPMENT
-            </h3>
-          </div>
+    <div class="ss-two">
+        <div class="chart-area">
+            <div id="chart"></div>
         </div>
-        <div class="iconSet container-fluid mx-auto">
-          <div class="row">
-            <div class="col" style="margin-top: 10px">
-              <div class="siBu">
-                <a href="#about">
-                  <i
-                    style="margin-left: 22px; margin-top: 16px"
-                    class="fas fa-info"
-                  ></i>
-                </a>
-              </div>
-            </div>
-            <div class="col" style="margin-top: 10px">
-              <div class="siBu">
-                <a href="#stacks">
-                  <i
-                    style="margin-left: 15px; margin-top: 16px"
-                    class="fas fa-code"
-                  ></i>
-                </a>
-              </div>
-            </div>
-            <div class="col" style="margin-top: 10px">
-              <div class="siBu">
-                <a href="#work">
-                  <i
-                    style="margin-left: 17px; margin-top: 16px"
-                    class="fas fa-briefcase"
-                  ></i>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!--ABOUT SECTION-->
-      <div id="about">
-        <div class="container">
-          <div class="desktopBio row justify-content-end p-5">
-            <div class="col-3"></div>
-            <div class="col-3"></div>
-            <div class="col-3">
-              <div
-                style="
-                  width: 200%;
-                  height: 83%;
-                  background-color: black;
-                  opacity: 0.85;
-                  color: white;
-                  padding-bottom: 30px;
-                "
-              >
-                <p
-                  class="text-center p-3"
-                  style="margin: 15px; font-size: 18px"
-                >
-                  Joanne Ramadani <br />is a Brooklyn-based data analyst, visualization designer, and web
-                  developer. She is currently a candidate for a Master's degree
-                  in Data Analytics & Visualization at the CUNY Graduate Center.
-                  <br />
-                  <br />
-                  She graduated from Macaulay Honors College at Baruch College
-                  in 2017 with a degree in English and Political Science, which
-                  trained her attention to detail and developed her logic
-                  skills. It also made her prone to writing her own biographies
-                  in the third person. When she's not building websites,
-                  scrutinizing data, or creating fun vizzes, you can usually
-                  find her drawing, writing, or making music.
-                </p>
-                <br /><br />
-              </div>
-            </div>
-            <div class="col-3"></div>
-          </div>
-          <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-          <div class="mobileBio row justify-content-center p-5">
-            <div
-              class="col-12"
-              style="
-                width: 450px;
-                padding: 2px;
-                background-color: black;
-                opacity: 0.85;
-                color: white;
-              "
-            >
-              <p class="text-center p-3" style="font-size: 18px">
-                Joanne Ramadani <br />is a Brooklyn-based data analyst, visualization designer, and web
-                  developer. She is currently a candidate for a Master's degree
-                  in Data Analytics & Visualization at the CUNY Graduate Center.
-                  <br />
-                  <br />
-                  She graduated from Macaulay Honors College at Baruch College
-                  in 2017 with a degree in English and Political Science, which
-                  trained her attention to detail and developed her logic
-                  skills. It also made her prone to writing her own biographies
-                  in the third person. When she's not building websites,
-                  scrutinizing data, or creating fun vizzes, you can usually
-                  find her drawing, writing, or making music.
-                  
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!--ALL LANGUAGES I KNOW-->
-      <div id="stacks">
-        <!--PARALLAX HERE, SEMI-OPAQUE BOX AND THEN BOXES ON TOP-->
-        <div style="padding-top: 50px">
-          <div class="text-center p-5">
-            <h2
-              class="stack"
-              data-toggle="tooltip"
-              data-placement="top"
-              title="For non-devs, a stack is a set of coding languages you know."
-            >
-              Code Stack
-            </h2>
-          </div>
-          <!-- Icons for reference -->
-          <div class="row m-5 justify-content-center">
-            <!-- HTML -->
-            <a><i
-              class="fab fa-html5 fa-4x icon"
-              data-toggle="tooltip"
-              data-placement="top"
-              title="Five years of experience with HTML"
-              aria-label="HTML5"
-            ></i></a>
-
-            <!-- CSS  -->
-            <a><i
-              class="fab fa-css3-alt fa-4x icon"
-              data-toggle="tooltip"
-              data-placement="top"
-              title="Five years of experience with CSS"
-              aria-label="CSS3"
-            ></i></a>
-
-            <!-- JavaScript -->
-            <a><i
-              class="fab fa-js-square fa-4x icon"
-              data-toggle="tooltip"
-              data-placement="top"
-              title="Three years of experience with JS"
-              aria-label="JavaScript"
-            ></i></a>
-
-            <!-- Vue -->
-            <a><i
-              class="fab fa-vuejs fa-4x icon"
-              data-toggle="tooltip"
-              data-placement="top"
-              title="Six months of experience with Vue"
-              aria-label="Vue.js"
-            ></i>
-
-            <!-- Node -->
-            <a><i
-              class="fab fa-node-js fa-4x icon"
-              data-toggle="tooltip"
-              data-placement="top"
-              title="One year of experience with Node"
-              aria-label="Node.js"
-            ></i></a>
-
-            <!-- Python -->
-            <a><i
-              class="fab fa-python fa-4x icon"
-              data-toggle="tooltip"
-              data-placement="top"
-              title="Two years of experience with Python"
-              aria-label="Python"
-            ></i></a>
-          </div>
-<p class="text-center">+ <br> <br>SQL | PHP</p>
-<div class="row m-5 justify-content-center">
-  <div class="text-center p-5">
-            <h2
-              class="stack text-center p-5"
-            >
-              Software Toolset
-            </h2>
-
-
-  
-
-            <img src="https://cdns.tblsft.com/sites/default/files/media/tableau-logo-transparent-fff.png" style="width: 50%" alt="Tableau Desktop Professional">
+    </div>
 
 </div>
-          </div>
+<div id="about">
+    <div class="teaching"> <img class="teachpic" src="./assets/images/presentation-ccny.png"></div>
+    <div class="about">
+        <h2>about</h2>
+    <p>
+        Joanne Ramadani <br>
+        is a New York-based data analyst, visualization designer, and web developer.
+  </p>
+    <p>
+        In 2017, she graduated from Macaulay Honors College at Baruch College with a degree in English and Political Science, which trained her attention to detail and developed her logic skills. Both of those skills were instrumental to the pursuit of her Master of Science degree in Data Analysis & Visualization from the CUNY Graduate Center, which she earned in February 2022.
+   
+    </p>
+    <p>
+        When not building websites, scrutinizing data, or creating fun vizzes, you can usually find her drawing, writing, or reading.
+    </p>
+        
+    </div>
 
-        </div>
-      </div>
-
-      <!--GRID OF WEB PORTFOLIO WORK-->
-      <div id="work">
-        <div class="container-fluid">
-          <h2 class="text-center p-5 text">Past Work and Projects</h2>
-
-          <div class="gridcontainer">
-            <div class="workImages"><a href="https://jramadani.github.io/geo-repspending/"><img width="100%" src="/resources/images/georep.png"></a></div>
-            <div class="workDescription"><div class="bgDescrip">
-              <h5><a href="https://jramadani.github.io/geo-repspending/">Dollars to Districts:<br> A Geographic Analysis of Representative Spending</a></h5>
-              <p>Dollars to Districts takes the premise of accountability in government and turns it on its head to ask a question not of corruption but of the side effects of the purposeful enormity of our republic: to what extent does geography factor into our representatives' budgetary spending habits?</p>
-              <p>Built in approximately one week using Vue, d3, and Mapbox GL JS. Initial data processing, cleaning, mapping, and exploration was done using QGIS.</p>
-              <p><i>Completed Spring 2021</i></p>
+</div>
+<div id="tools">
+    <h2 class="tools-header">tools & code stack</h2>
+    <div class="tools">
+            <div class="stack">
+                <h4>code</h4>
+                <ul class="group">
+                    <li id="python"><img class="code-icons" src="./assets/icons/carbon_logo-python.svg"> &nbsp;&nbsp; Python</li>
+                    <ul class="packages">
+                        <li>&nbsp;&nbsp; ➵ NumPy</li>
+                        <li>&nbsp;&nbsp; ➵ pandas</li>
+                        <li>&nbsp;&nbsp; ➵ Matplotlib / Seaborn / Bokeh</li>
+                        <li>&nbsp;&nbsp; ➵ SciKit-Learn</li>
+                        <li>&nbsp;&nbsp; ➵ BeautifulSoup4</li>
+                        <li>&nbsp;&nbsp; ➵ Requests</li>
+                    </ul>
+                    <li id="html"><img class="code-icons" src="./assets/icons/akar-icons_html-fill.svg"> &nbsp;&nbsp; HTML</li>
+                    <li id="css"><img class="code-icons" src="./assets/icons/ion_logo-css3.svg"> &nbsp;&nbsp; CSS</li>
+                    <li id="js"><img class="code-icons" src="./assets/icons/teenyicons_javascript-solid.svg"> &nbsp;&nbsp; JS</li>
+                    <ul class="packages">
+                        <li>&nbsp;&nbsp; ➵ Vue.js</li>
+                        <li>&nbsp;&nbsp; ➵ d3.js</li>
+                        <li>&nbsp;&nbsp; ➵ Scrollama.js</li>
+                    </ul>
+                    <li id="SQL"><img class="code-icons" src="./assets/icons/sql-icon.svg"> &nbsp;&nbsp; SQL</li>
+                </ul>
             </div>
+            <div class="bi-icons">
+                <h4>software</h4>
+                <ul class="group">
+                    <li id="tableau"><img class="code-icons" src="./assets/icons/ion_logo-tableau.svg"> &nbsp;&nbsp; Tableau</li>
+                    <li id="powerbi"><img class="code-icons" src="./assets/icons/PowerBI_scalable 1.svg"> &nbsp;&nbsp; Power BI</li>
+                    <li id="looker"><img class="code-icons" src="./assets/icons/looker.svg"> &nbsp;&nbsp; Looker</li>
+                    <li id="figma"><img class="code-icons" src="./assets/icons/figma.svg"> &nbsp;&nbsp; Figma</li>
+                    <li id="vscode"><img class="code-icons" src="./assets/icons/vscode.svg"> &nbsp;&nbsp; Microsoft VS Code</li>
+                    <li id="dbeaver"><img class="code-icons" src="./assets/icons/dbeaver.svg"> &nbsp;&nbsp; DBeaver</li>
+                </ul>
             </div>
-
-            <div class="workImages"><a href="https://freedom-of-speech-project.github.io/fos/index.html"><img width="100%" src="/resources/images/fos.png"></a></div>
-            <div class="workDescription"><div class="bgDescrip">
-              <h5><a href="https://freedom-of-speech-project.github.io/fos/index.html">Freedom of Speech Project</a> <span style="font-size:12px;">(Group Project)</span></h5>
-
-              <p>Freedom of Speech* is a web project that helps users to understand the First Amendment right to freedom of speech through interactive visualizations of Supreme Court verdicts that have expanded or contracted the definition of “free speech” over the history of the United States. </p>
-              <p>Built using Vue and d3.</p>
-              <p><i>Version 1.0 Completed Spring 2021</i></p>
-            </div>
-            </div>
-
-
-            <div class="workImages"><a href="https://jramadani.github.io/housing-data"><img width="100%" src="/resources/images/projectpreview.png"></a></div>
-            <div class="workDescription"><div class="bgDescrip">
-              <h5><a href="https://jramadani.github.io/housing-data">Affording the American Dream</a></h5>
-              <p>Affording the American Dream seeks to give the user an overview of the housing market over a ten year range while also allowing them to drill down into the details by zip code as a springboard into understanding the shifts of American housing values. What does the landscape of typical home values look like in the United States? What does an affordable house look like, and how has it changed over the last decade? Users can interact with the dashboard, toggling a switch for the start and end of the decade, entering different gross annual incomes, and clicking on, panning, and zooming on the map in order to dive into those details and explore how the landscape has changed from 2009 to 2019. </p>
-              <p>Built using d3 and Mapbox GL JS.</p>
-              <p><i>Completed Fall 2020</i></p>
-            </div>
-            </div>
-            <div class="workImages"><a href="https://observablehq.com/@jramadani/ny-millennials-attributes"><img width="100%" src="/resources/images/NYmillsnotitle.png"></a></div>
-            <div class="workDescription"><div class="bgDescrip">
-              <h5><a href="https://observablehq.com/@jramadani/ny-millennials-attributes">NY Millennials Attributes</a></h5>
-              <p>This is a smaller visualization built to test a calendar heatmap in Observable, as well as to visualize procedurally generated data.</p>
-              <p>Built in Observable using d3.</p>
-                <p><i>Completed September 2020, updated November 2020</i></p>
-              </div>
-            </div>
-            <div class="workImages"><a href="https://public.tableau.com/profile/joanne.ramadani#!/vizhome/AmericanBehemothOurTrillion-DollarHealthcareSystem/AmericanBehemoth"><img width="100%" src="/resources/images/ABpt2.png"></a></div>
-            <div class="workDescription"><div class="bgDescrip">
-              <h5><a href="https://public.tableau.com/profile/joanne.ramadani#!/vizhome/AmericanBehemothOurTrillion-DollarHealthcareSystem/AmericanBehemoth">American Behemoth:<br> Our Trillion-Dollar Healthcare System</a></h5>
-              <p>Using the 2017 data from the Center of Medicare and Medicaid Services, I analyzed healthcare costs and their projections from 2018-2027 in order to figure out if we'll get any relief with regard to the rising cost of healthcare.</p>
-              <p>Built using Tableau.</p>
-              <p><i>Completed Fall 2019</i></p>
-            </div>
-            </div>
-
-          </div>
-      </div>
-
-      
 
     </div>
-  </body>
-        <footer id="contact">
-        <div class="row" style="position: absolute; bottom:0;">
-          <div class="col-12" style="margin-top: 5px; padding-left: 50px; ">
 
-            <div class="row align-items-center">
-              <a href="https://observablehq.com/@jramadani"
-                ><svg style="height: 50px; width: 50px"
-                data-toggle="tooltip"
-                data-placement="top"
-                aria-label="Observable HQ profile"
-                title="Click here to view my Observable profile!"
-                >
-                  <path
-                    d="M12.5 22.6667C11.3458 22.6667 10.3458 22.4153 9.5 21.9127C8.65721 21.412 7.98339 20.7027 7.55521 19.8654C7.09997 18.9942 6.76672 18.0729 6.56354 17.1239C6.34796 16.0947 6.24294 15.0483 6.25 14C6.25 13.1699 6.30417 12.3764 6.41354 11.6176C6.52188 10.8598 6.72292 10.0894 7.01563 9.30748C7.30833 8.52555 7.68542 7.84763 8.14479 7.27274C8.62304 6.68378 9.24141 6.20438 9.95208 5.87163C10.6979 5.51244 11.5458 5.33333 12.5 5.33333C13.6542 5.33333 14.6542 5.58467 15.5 6.08733C16.3428 6.588 17.0166 7.29733 17.4448 8.13459C17.8969 8.99644 18.2271 9.9103 18.4365 10.8761C18.6448 11.841 18.75 12.883 18.75 14C18.75 14.8301 18.6958 15.6236 18.5865 16.3824C18.4699 17.1702 18.2639 17.9446 17.9719 18.6925C17.6698 19.4744 17.2948 20.1524 16.8427 20.7273C16.3906 21.3021 15.7927 21.7692 15.0479 22.1284C14.3031 22.4876 13.4542 22.6667 12.5 22.6667ZM14.7063 16.2945C15.304 15.6944 15.6365 14.864 15.625 14C15.625 13.1073 15.326 12.3425 14.7292 11.7055C14.1313 11.0685 13.3885 10.75 12.5 10.75C11.6115 10.75 10.8688 11.0685 10.2708 11.7055C9.68532 12.3123 9.36198 13.1405 9.375 14C9.375 14.8927 9.67396 15.6575 10.2708 16.2945C10.8688 16.9315 11.6115 17.25 12.5 17.25C13.3885 17.25 14.124 16.9315 14.7063 16.2945ZM12.5 27C19.4031 27 25 21.1792 25 14C25 6.82075 19.4031 1 12.5 1C5.59687 1 0 6.82075 0 14C0 21.1792 5.59687 27 12.5 27Z"
-                    fill="black"
-                  ></path></svg
-              ></a>
-            <a href="https://twitter.com/joannealytics"
-              ><i class="fab fa-twitter fa-2x contactIcon" data-toggle="tooltip"
-              data-placement="top"
-              aria-label="Twitter profile"
-              title="View my data thoughts here!"></i
-            ></a>
-            <a href="https://github.com/jramadani"
-              ><i class="fab fa-github fa-2x contactIcon" data-toggle="tooltip"
-              data-placement="top"
-              aria-label="GitHub profile"
-              title="Look through my GitHub repositories here!"></i
-            ></a>
-            <a href="https://www.linkedin.com/in/joanne-ramadani/"
-              ><i class="fab fa-linkedin fa-2x contactIcon" data-toggle="tooltip"
-              data-placement="top"
-              aria-label="LinkedIn profile"
-              title="Click here to view my LinkedIn!"></i
-            ></a>
-          </div>
-          </div>
+
+
+
+
+<!-- first draft below; come back to this with a stronger idea of how to execute it -->
+
+    <!-- <div class="tools">
+        <div class="code-list">
+            <div class="stack">
+                <h4>code</h4>
+                <ul>
+                    <li id="python"><a href="https://github.com/jramadani/datamining-finalproject/blob/master/ffnetdata-outliersremoved.py"><img class="code-icons" src="./assets/icons/carbon_logo-python.svg"> &nbsp;&nbsp; Python</a></li>
+                    <li id="html"><img class="code-icons" src="./assets/icons/akar-icons_html-fill.svg"> &nbsp;&nbsp; HTML</li>
+                    <li id="css"><img class="code-icons" src="./assets/icons/ion_logo-css3.svg"> &nbsp;&nbsp; CSS</li>
+                    <li id="js"><img class="code-icons" src="./assets/icons/teenyicons_javascript-solid.svg"> &nbsp;&nbsp; JS</li>
+                </ul>
+            </div>
+            <div id="stack-display">
+                <div class="window-bar"></div>
+                <div class="window-base"><p id="examples">Hover over the code language to see snippets of project code</p></div>
+            </div>
         </div>
-      </footer>
-</html>
+        <div class="bi-softwares">
+            <div class="bi-icons">
+                <h4>business intelligence</h4>
+                <ul>
+                    <li id="tableau"><img class="code-icons" src="./assets/icons/ion_logo-tableau.svg"> &nbsp;&nbsp; Tableau</li>
+                    <li id="powerbi"><img class="code-icons" src="./assets/icons/PowerBI_scalable 1.svg"> &nbsp;&nbsp; Power BI</li>
+                </ul>
+            </div>
+            <div id="bi-display">
+                <div class="window-bar"></div>
+                <div class="window-base"></div>
+            </div>
+        </div>
+    </div> -->
+
+</div>
+<div id="work">
+    <h2 style="text-align: right; padding-right:50px;">past work & projects</h2>
+    <div class="work-container">
+        <p class="instructions">Click (or tap if on mobile) on any of the project titles to see the project in action.</p>
+        <div class="work-wrapper"><img class="work" src="./assets/images/capstone.gif"> <div class="workdescrip"><a href="https://jramadani.github.io/nycbudget-slices/" target="_blank"><h4>Slices of the Big Apple: <br> Understanding the New York City Budget</h4></a> <p>Capstone project for M.S. in Data Analysis & Visualization at the CUNY Graduate Center, completed January 2022. <br><br>
+
+            Using five years (Fiscal Years 2017-2021) of budget data from the New York City Comptroller’s Office, Slices of the Big Apple takes a two-fold approach to building literacy in our government finances by first visualizing the components of the budget and its process, and then leading the audience through the data for one slice of the budget—community board funding. By choosing an interactive narrative approach to visualizing budget data, this project offers an alternative to the classic “budget data dashboard” that makes such an important part of local government accessible to all.
+        
+        <br><br> 
+
+        Tools used for the final product include HTML/CSS/JS and the packages d3.js and Scrollama.js. Data exploration and analysis work done in Python using JupyterLab (Jupyter notebook environment).
+        </p></div></div>
+        <hr />
+        
+            <div class="work-wrapper"><img class="work" src="./assets/images/amdream.png"> <div class="workdescrip"><a href="https://jramadani.github.io/housing-data" target="_blank"><h4>Affording the American Dream</h4></a> <p>
+            Affording the American Dream seeks to give the user an overview of the housing market over a ten year range while also allowing them to drill down into the details by zip code as a springboard into understanding the shifts of American housing values. What does the landscape of typical home values look like in the United States? What does an affordable house look like, and how has it changed over the last decade? Users can interact with the dashboard, toggling a switch for the start and end of the decade, entering different gross annual incomes, and clicking on, panning, and zooming on the map in order to dive into those details and explore how the landscape has changed from 2009 to 2019. 
+    <br><br>
+            Tools used include HTML/CSS/JS, d3.js, Mapbox GL JS, and some Bootstrap.    
+    </p></div></div>
+    <hr />
+        <div class="work-wrapper"><img class="work" src="./assets/images/behemoth.png"> <div class="workdescrip"><a href="https://public.tableau.com/profile/joanne.ramadani#!/vizhome/AmericanBehemothOurTrillion-DollarHealthcareSystem/AmericanBehemoth" target="_blank"><h4>American Behemoth</h4></a> <p>
+
+            Final project for Fundamentals of Data Visualization at the CUNY Graduate Center. Using the 2017 data from the Center of Medicare and Medicaid Services, I analyzed healthcare costs and their projections from 2018-2027 in order to figure out if we'll get any relief with regard to the rising cost of healthcare.
+        <br><br>
+            Tools used to build this project include Tableau Desktop Professional.
+        </p></div></div>
+
+
+    </div>
+
+
+
+</div>
+<!-- <div class="section-five"></div> -->
+
+<footer style="text-align: center; font-size:20px;">Hosted on Netlify + <a href="https://github.com/jramadani/joanneramadani.com">GitHub</a> & made with ❤️ by Joanne Ramadani</footer>
+
+    </body>
+
+    <script src="index.js" type="module"></script>
+    </html>
