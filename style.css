@@ -109,14 +109,12 @@ h2{
     padding-left:15vw;
 }
 .list-items li{
-    /* color: #277e8e; */
     color: #27808e;
     font-size:30px;
     font-weight:300;
 }
 
 .list-items a{
-    /* color: #45B2B6; */
     color:#27808e;
 }
 
@@ -287,7 +285,7 @@ footer{
 }
 
 .intro-title{
-    padding-top:37vh;
+    padding-top:33vh;
 }
 .sub-intro{
     text-align:center; 
@@ -318,7 +316,7 @@ footer{
 .list-items{
     display:grid;
     place-items: center;
-    margin-top:5vh;
+    margin-top:10vh;
 }
 
 .list-items li{
@@ -346,8 +344,8 @@ footer{
     margin: 50px 0px 50px 0px;
     border-radius: 60%;
     transform:rotate(-77.73deg);
-    right:-25%;
-    top:-25%;
+    /* right:-25%; */
+    top:-30%;
     position:absolute;
 }
 #chart svg{
