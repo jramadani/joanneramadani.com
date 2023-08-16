@@ -92,6 +92,13 @@ h2{
 .intro-title{
     padding-top:15vh;
 }
+
+.sub-intro{
+    text-align:center; 
+    font-size:28px; 
+    font-weight:300;
+}
+
 .list-items{
     padding-top:45vh;
     padding-left:15vw;
@@ -341,6 +348,11 @@ footer{
 .intro-title{
     padding-top:37vh;
 }
+.sub-intro{
+    text-align:center; 
+    font-size:20px; 
+    font-weight:300;
+}
 .navbar{
     float:left;
     position:fixed;
@@ -360,6 +372,7 @@ footer{
 .list-items{
     display:grid;
     place-items: center;
+    margin-top:5vh;
 }
 
 .list-items li{
@@ -381,12 +394,14 @@ footer{
 }
 
 #chart{
+    height:69.8vh;
+    width:90vw;
     background-color: hsla(182, 45%, 49%, 1);
     margin: 50px 0px 50px 0px;
-    border-radius: 50%;
+    border-radius: 60%;
     transform:rotate(-45.42deg);
-    right:-15%;
-    top:-25%;
+    right:-25%;
+    top:-30%;
     position:absolute;
 }
 #chart svg{
@@ -460,14 +475,14 @@ footer{
 
 .workdescrip{
     text-align: center;
-    padding: 75px;
+    padding: 10vw 10vw 30vw 10vw;
     display: grid;
     place-self: center;
-    font-size:24px;
+    font-size:20px;
     line-height: 150%;
 }
 .work-wrapper h4{
-    font-size: 36px;
+    font-size: 32px;
 }
 
 .work{
@@ -480,6 +495,11 @@ hr{
     border: lightgray 2px solid;
     width:40px;
     margin-bottom:10vh;
+}
+
+footer{
+    padding-top:70px;
+    padding-bottom:20px;
 }
 
 }
