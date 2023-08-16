@@ -18,7 +18,7 @@ if (((window.innerWidth / window.innerHeight) > 3/2) && window.innerWidth <= 180
 }
 
 if ((window.innerWidth / window.innerHeight) < 3/2 && window.innerHeight > window.innerWidth){
-    circleArt(width * 1.5, height, 125, 3, center[0] + margin.left * 3, center[1] + margin.top * 5, 4, "0 0 500 500")
+    circleArt(width * 1.5, height, 125, 3, center[0] + margin.left * 3.75, center[1] + margin.top * 4.5, 4, "0 0 500 500")
 }
 
 
