@@ -285,7 +285,7 @@ footer{
 }
 
 .intro-title{
-    padding-top:33vh;
+    padding-top:35vh;
 }
 .sub-intro{
     text-align:center; 
@@ -341,16 +341,16 @@ footer{
     height:457px;
     width:345px;
     background-color: hsla(182, 45%, 49%, 1);
-    margin: 50px 0px 50px 0px;
+    /* margin: 50px 0px 50px 0px; */
     border-radius: 60%;
-    transform:rotate(-77.73deg);
+    transform:rotate(-90deg);
     /* right:-25%; */
-    top:-30%;
+    top:-25%;
     position:absolute;
 }
 #chart svg{
     /* margin-left:10vw; */
-    transform:rotate(77.73deg);
+    transform:rotate(90deg);
 
 }
 
